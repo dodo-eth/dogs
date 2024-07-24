@@ -1,0 +1,15 @@
+[Unit]
+Description=Send Request Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /root/Dogs/app.py
+WorkingDirectory=/root/Dogs/
+Restart=always
+StandardOutput=append:/root/Dogs/Dogs_service.out.log
+StandardError=append:/root/Dogs/Dogs_service.err.log
+SyslogIdentifier=Dogs_service
+
+[Install]
+WantedBy=multi-user.target
+
