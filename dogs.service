@@ -1,5 +1,5 @@
 [Unit]
-Description=Dogs Request Service
+Description=dogs Request Service
 After=network.target
 
 [Service]
