@@ -5,9 +5,7 @@ After=network.target
 [Service]
 ExecStart=/usr/bin/python3 /root/dogs/app.py
 WorkingDirectory=/root/dogs/
-Restart=always
-StandardOutput=append:/root/dogs/dogs_service.out.log
-StandardError=append:/root/dogs/dogs_service.err.log
+Restart=always 
 SyslogIdentifier=dogs_service
 
 [Install]
