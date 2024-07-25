@@ -4,3 +4,4 @@
 4) mv dogs.service /etc/systemd/system/
 5) sudo systemctl daemon-reload
 6) systemctl start dogs.service && systemctl enable dogs.service
+7) csv format disc,http proxy,tgid
